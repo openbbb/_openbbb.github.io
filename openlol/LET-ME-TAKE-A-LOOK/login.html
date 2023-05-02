@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+
+
+<head>
+	<!-- Google Tag Manager -->
+	<script>(function (w, d, s, l, i) {
+			w[l] = w[l] || []; w[l].push({
+				'gtm.start':
+					new Date().getTime(), event: 'gtm.js'
+			}); var f = d.getElementsByTagName(s)[0],
+				j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+					'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+		})(window, document, 'script', 'dataLayer', 'GTM-53NK6HZ');</script>
+	<!-- End Google Tag Manager -->
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter" rel="stylesheet">
+
+	<title>聽話</title>
+	<style>
+		:root {
+			font-family: 'Inter', sans-serif;
+		}
+
+		@supports (font-variation-settings: normal) {
+			:root {
+				font-family: 'Inter var', sans-serif;
+			}
+		}
+
+		html {
+			/* background-image: linear-gradient(43deg, #040707 0%, #000000 46%, #2c2c2c 100%); */
+			background-image: linear-gradient(90deg, #040707 0%, #44495a 100%);
+			background-image: url("https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltce2bd37e8b9f92af/638acfdb214e4b5fbad734a7/12062022_LoLPC2023RankedChangesArticle_Banner.jpg");
+
+		}
+
+		#background-video {
+			width: 100vw;
+			height: 100vh;
+			object-fit: cover;
+			position: fixed;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			z-index: -1;
+		}
+
+		#container {
+			/* background-image: url("https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltce2bd37e8b9f92af/638acfdb214e4b5fbad734a7/12062022_LoLPC2023RankedChangesArticle_Banner.jpg"); */
+			display: flex;
+			justify-content: center;
+			padding-top: 92px;
+			/* padding-bottom: 200px; */
+			margin-top: 68px;
+			margin-top: 3%;
+			height: 100%;
+
+		}
+
+		#loginDiv {
+			background: linear-gradient(69deg, rgba(2, 10, 18, .5) 0%, rgba(2, 2, 5, 0.75) 30%, rgba(0, 0, 6, 0.6) 100%, rgba(17, 17, 18, 0.7) 100%);
+			/* background: rgb(0, 0, 0, 0.75); */
+			box-shadow: 0px 4px 32px 4px rgba(0, 0, 0, 0.75);
+
+			/* background-image: url("https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltce2bd37e8b9f92af/638acfdb214e4b5fbad734a7/12062022_LoLPC2023RankedChangesArticle_Banner.jpg"); */
+			height: 500px;
+			width: 435px;
+			padding-top: 68px;
+			border-radius: 12px;
+			backdrop-filter: blur(2px);
+			/* filter: blur(2px); */
+
+		}
+
+		#loginDiv #versionDiv {
+			background: #EB0029;
+			opacity: 0.92;
+			position: absolute;
+			width: 100px;
+			height: 100px;
+			right: -50px;
+			top: 18px;
+			box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.4);
+			border-radius: 100px;
+		}
+
+		#loginDiv #versionDiv #versionLbl {
+
+			position: relative;
+			width: 41px;
+			height: 17px;
+			/* left: 1600px; */
+			/* top: 474px; */
+			left: 28px;
+			top: 30px;
+			font-family: 'Inter';
+			font-style: normal;
+			font-weight: 800;
+			font-size: 14px;
+			/* line-height: 34px; */
+			/* identical to box height */
+
+
+			color: #FFFFFF;
+
+			text-shadow: 6px 4px 16px rgba(149, 33, 33, 0.4);
+		}
+
+		#loginDiv #markDiv {
+			background: #E12828;
+			box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+			border-radius: 32px 0px;
+			position: absolute;
+			width: 18px;
+			height: 78px;
+
+			left: -8px;
+			top: 70px;
+			/* top: 0px; */
+		}
+
+		#loginDiv #vertical {
+			display: flex;
+			flex-direction: column;
+			margin-left: 10.5%;
+			margin-right: 10.5%;
+		}
+
+		#loginDiv #vertical #accountDiv {
+			background: rgba(2, 2, 2, 0.4);
+			display: flex;
+			flex-direction: column;
+			/* margin-left: auto; */
+			/* margin-right: auto; */
+			/* align-items: center; */
+			filter: blur(10);
+
+			border-radius: 4px;
+			height: 90px;
+			box-shadow: 0px 4px 16px 4px rgba(0, 0, 0, 0.4);
+		}
+
+		#loginDiv #vertical #accountDiv #accountLbl {
+			color: rgba(163, 149, 107, 0.75);
+			padding-top: 12px;
+			padding-left: 18px;
+			padding-right: 18px;
+
+			font-family: 'Inter';
+			font-style: normal;
+			font-weight: 800;
+			font-size: 18px;
+			text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+		}
+
+		#loginDiv #vertical #accountDiv #accountInput {
+			background: transparent;
+			color: rgba(163, 149, 107, 1);
+			margin-top: 6px;
+			margin-left: 18px;
+			margin-right: 18px;
+			border-radius: 12px;
+
+			/* text-align: center; */
+			border: none;
+			font-family: 'Inter';
+			font-style: normal;
+			font-weight: 500;
+			font-size: 18px;
+			text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+		}
+
+		#loginDiv #vertical #accountDiv #accountInput:focus {
+			outline: none !important;
+			/* box-shadow: 0px 0px 5000px rgb(238, 239, 217, 1); */
+		}
+
+		#loginDiv #vertical #accountDiv #line {
+			margin-top: 6px;
+			margin-left: 6px;
+			margin-right: 6px;
+			height: 4px;
+			background: #1B1818;
+			border-radius: 4px;
+			box-shadow: 0px 4px 32px 4px rgba(0, 0, 0, 0.75);
+		}
+
+		#loginDiv #vertical #passwordDiv {
+			background: rgba(2, 2, 2, 0.4);
+			display: flex;
+			flex-direction: column;
+			/* margin-left: auto; */
+			/* margin-right: auto; */
+			/* align-items: center; */
+			margin-top: 40px;
+
+			border-radius: 6px;
+
+			box-shadow: 0px 4px 32px 4px rgba(0, 0, 0, 0.8);
+			height: 90px;
+		}
+
+		#loginDiv #vertical #passwordDiv #passwordLbl {
+			color: rgba(163, 149, 107, 0.75);
+			padding-top: 12px;
+			padding-left: 18px;
+			padding-right: 18px;
+
+			font-family: 'Inter';
+			font-style: normal;
+			font-weight: 800;
+			font-size: 18px;
+			text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+		}
+
+		#loginDiv #vertical #passwordDiv #passwordInput {
+			background: transparent;
+			color: rgba(163, 149, 107, 1);
+			margin-top: 6px;
+			margin-left: 18px;
+			margin-right: 18px;
+			border-radius: 12px;
+			/* text-align: center; */
+
+
+			border: none;
+			font-family: 'Inter';
+			font-style: normal;
+			font-weight: 500;
+			font-size: 18px;
+			text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+		}
+
+		#loginDiv #vertical #passwordDiv #passwordInput:focus {
+			outline: none !important;
+			/* box-shadow: 0px 0px 500px rgb(238, 239, 217, 1); */
+		}
+
+		#loginDiv #vertical #passwordDiv #line {
+			margin-top: 6px;
+			margin-left: 6px;
+			margin-right: 6px;
+			height: 4px;
+			background: #1B1818;
+			border-radius: 4px;
+			box-shadow: 0px 4px 32px 4px rgba(0, 0, 0, 0.75);
+
+
+		}
+
+		#loginBtn {
+			background-color: rgba(163, 149, 107, .99);
+			box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+			height: 64px;
+			/* margin-top: 225px; */
+			margin-top: 175px;
+			border-radius: 8px;
+			border: none;
+
+
+
+
+			font-family: 'Inter';
+			font-style: normal;
+			font-size: 24px;
+			font-weight: 800;
+			/* line-height: 58px; */
+			color: #161515;
+
+
+		}
+
+		#loginBtn:hover {
+			background-color: rgb(183, 166, 126, 1);
+		}
+
+		#loginBtn:active {
+			background-color: rgba(113, 116, 75, 0.124);
+			color: rgba(163, 149, 107, 0.4);
+
+		}
+
+		/* #declare {
+
+			position: fixed;
+			bottom: 32px;
+			left: 24px;
+			opacity: 0.4;
+			font-size: small;
+		} */
+
+	</style>
+	<script>
+		const local = {
+			"account": "帳號",
+			"password": "密碼",
+			"login": "登入"
+		}
+	</script>
+</head>
+
+<body>
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-53NK6HZ" height="0" width="0"
+			style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+	<!-- <video id="background-video" autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
+		<source
+			src="https://media.istockphoto.com/id/1391378490/video/the-pages-of-an-open-book-flutter-in-the-wind-in-a-dark-room-slow-motion.mp4?s=mp4-640x640-is&k=20&c=f04D3codIejK0RWj9GYJlZ-19M0k05lmkj2Kt-6DhLE="
+			type="video/mp4">
+	</video> -->
+	<div id="container">
+		<div id="loginDiv">
+			<div id="vertical">
+				<div id="accountDiv">
+					<label id="accountLbl">account</label>
+					<input id="accountInput" value="tingyou"></input>
+					<div id="line"></div>
+				</div>
+				<div id="passwordDiv">
+					<label id="passwordLbl">password</label>
+					<input id="passwordInput" value="kaikai"></input>
+					<div id="line"></div>
+				</div>
+				<div id="ruleDiv">
+					<div id="ruleBox"></div><label id="ruleLbl"></label>
+				</div>
+				<button id="loginBtn">login</button>
+			</div>
+			<div id="versionDiv">
+				<label id="versionLbl">v0.1.4</label>
+			</div>
+			<div id="markDiv"></div>
+
+		</div>
+
+
+		<script>
+
+			// InitView
+			document.getElementById("loginBtn").innerHTML = local["login"]
+			document.getElementById("accountLbl").innerHTML = local["account"]
+			document.getElementById("passwordLbl").innerHTML = local["password"]
+
+
+
+		</script>
+
+
+
+</body>
+
+</html>
